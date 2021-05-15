@@ -1,0 +1,19 @@
+p {
+    background-color: blue;
+    color: wheat;
+    font-size: 20px;
+}
+
+.myP,
+.MyClass {
+    background-color: pink;
+    color: black;
+    font-size: 20px;
+}
+
+#MyId,
+.MyClass {
+    background-color: red;
+    color: black;
+    font-size: 25px;
+}
