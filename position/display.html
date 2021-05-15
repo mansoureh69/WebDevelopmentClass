@@ -24,25 +24,46 @@
             color: blue;
             background-color: red;
         }
+        
+        .fixed {
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            background-color: blueviolet;
+        }
+        
+        .static {
+            position: static;
+            background-color: cornflowerblue;
+        }
+        
+        .sticky {
+            position: sticky;
+        }
     </style>
 </head>
 
 <body>
     <div class="relative">
-        <div style="position: relative; top: 100px; left: 30px;">
+        <div class="fixed">
+            fixed
+        </div>
+        <div style="position: relative; top: 100px; left: 30px; background-color: palevioletred;color: black;
+        border: black 1px solid;">
             test relative
         </div>
-        <div>
-            content
+        <div class="static">
+            static content
             <div class="absolute" id="absolute" style="color: white;">
                 my absolute
             </div>
         </div>
-        <div>
+        <div class="sticky">
             sidebar
         </div>
     </div>
     <footer>
+
         footer
     </footer>
 </body>
