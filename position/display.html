@@ -1,0 +1,50 @@
+<html>
+
+<head>
+
+    <style>
+        .relative {
+            top: 20px;
+            left: 20px;
+        }
+        
+        div {
+            color: black;
+        }
+        
+        #absolute {
+            color: red;
+            background-color: blue;
+        }
+        
+        .absolute {
+            position: absolute;
+            top: 80px;
+            left: 80px;
+            color: blue;
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="relative">
+        <div style="position: relative; top: 100px; left: 30px;">
+            test relative
+        </div>
+        <div>
+            content
+            <div class="absolute" id="absolute" style="color: white;">
+                my absolute
+            </div>
+        </div>
+        <div>
+            sidebar
+        </div>
+    </div>
+    <footer>
+        footer
+    </footer>
+</body>
+
+</html>
